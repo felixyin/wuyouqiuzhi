@@ -32,8 +32,8 @@ async function main() {
   const frame = page.frames().find((frame) => frame.name() === "Openloginbox");
 
   //输入登陆账号
-  await frame.type("#UserName", "fexliyin", { delay: 50 }); // 输入变慢，像一个用户
-  await frame.type("#PassWord", "Ybkk1027", { delay: 50 }); // 输入变慢，像一个用户
+  await frame.type("#UserName", "你的账号", { delay: 50 }); // 输入变慢，像一个用户
+  await frame.type("#PassWord", "你的密码", { delay: 50 }); // 输入变慢，像一个用户
 
   // 点击登陆
   await page.waitForTimeout(1 * 1000);
